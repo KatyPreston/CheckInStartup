@@ -75,4 +75,10 @@ public class Flight {
     public String takeOff(){
         return "Whooooosh!!";
     }
+
+    public void checkBagWeight(Bag bag, Passenger passenger) {
+        if(bag.getWeight() > 23){
+            passenger.payMoney(5);
+        }
+    }
 }

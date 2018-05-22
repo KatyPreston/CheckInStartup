@@ -15,4 +15,9 @@ public class BagTest {
     public void canGetWeight(){
         assertEquals(20, bag.getWeight());
     }
+
+    @Test
+    public void canChargeForOversizedBags(){
+
+    }
 }

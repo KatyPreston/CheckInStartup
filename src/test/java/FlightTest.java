@@ -7,13 +7,14 @@ import static org.junit.Assert.assertEquals;
 public class FlightTest {
     Flight flight, flight2;
     Passenger passenger;
-    Bag bag;
+    Bag bag, bag2;
 
     @Before
     public void before(){
         flight = new Flight(500, 2);
-        passenger = new Passenger();
+        passenger = new Passenger(10);
         bag = new Bag(20);
+        bag2 = new Bag(25);
     }
 
     @Test
@@ -69,7 +70,7 @@ public class FlightTest {
     @Test
     public void cantRemovePassengerNonExistant(){
         flight.checkInPassenger(passenger);
-        flight.removePassenger(new Passenger());
+        flight.removePassenger(new Passenger(10));
         assertEquals(1, flight.countPassengerList());
     }
 
@@ -114,6 +115,12 @@ public class FlightTest {
         flight.checkInPassenger(passenger);
         flight.checkInPassenger(passenger);
         assertEquals(2, flight.countPassengerList());
+    }
+
+    @Test
+    public void canCheckBagIsOversized(){
+        flight.checkBagWeight(bag2, passenger);
+        assertEquals(5, passenger.getMoney(), 0.1);
     }
 
     @Test
