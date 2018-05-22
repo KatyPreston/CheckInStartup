@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AirCheckIn.iml" filepath="$PROJECT_DIR$/.idea/modules/AirCheckIn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AirCheckIn_main.iml" filepath="$PROJECT_DIR$/.idea/modules/AirCheckIn_main.iml" group="AirCheckIn" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AirCheckIn_test.iml" filepath="$PROJECT_DIR$/.idea/modules/AirCheckIn_test.iml" group="AirCheckIn" />
+    </modules>
+  </component>
+</project>
